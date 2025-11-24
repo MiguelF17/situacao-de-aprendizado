@@ -36,10 +36,20 @@ header a {
     color: #fff;
 }
 
+header a:hover {
+    text-decoration: underline;
+}
+
 .login {
     padding: 10px 24px;
     border: 2px solid #fff;
     border-radius: 7px;
+    transition: color 0.3s ease;
+}
+
+.login:hover {
+    background-color: #fff;
+    color: #0E0E55;
 }
 
 /* Hero */
