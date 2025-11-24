@@ -1,0 +1,24 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    color: #7d7d7d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navegacao ul {
+    display: flex;
+    gap: 80px;
+    list-style-type: none;
+}
+
+.navegacao a {
+    text-decoration: none;
+    color: #aaa;
+}
+
+.login {
+    color: #000;
+    background-color: #aaa;
+}
