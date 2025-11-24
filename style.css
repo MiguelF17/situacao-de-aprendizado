@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    background-color: #f9f9f9;
+}
+
 header {
     margin: auto;
     text-align: center;
@@ -55,36 +59,41 @@ header a:hover {
 /* Hero */
 
 .hero {
-    width: 100%;
-    max-width: 800px;
-    margin: 60px auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.445)),
+        url(https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg) no-repeat center center/cover;
+    padding: 80px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    max-height: 400px;
+    overflow: hidden;
 }
 
 .hero h1 {
     font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 40px;
-    color: #0E0E55;
+    color: #fff;
 }
 
 .hero p {
     margin-bottom: 40px;
+    color: #fff;
 }
 
 .hero button {
     padding: 12px 24px;
     background-color: transparent;
-    border: 2px solid #0E0E55;
-    color: #0E0E55;
+    border: 2px solid #fff;
+    color: #fff;
     border-radius: 7px;
     transition: color 0.3s ease;
     cursor: pointer;
 }
 
 .hero button:hover {
-    background-color: #0E0E55;
-    color: #fff;
+    background-color: #fff;
+    color: #0E0E55;
 }
 
 /* cards */
@@ -92,12 +101,16 @@ header a:hover {
 .categoria {
     width: 100%;
     max-width: 1000px;
-    margin: 40px auto;
+    margin: 60px auto;
 }
 
 .categoria h2 {
     font-size: 24px;
     color: #0E0E55;
+    margin-bottom: 20px;
+}
+
+.categoria p {
     margin-bottom: 20px;
 }
 
@@ -109,22 +122,34 @@ header a:hover {
 
 .card {
     width: 220px;
-    background-color: #eee;
-    border-radius: 6px;
+    background-color: #fff;
+    border-radius: 8px;
     overflow: hidden;
-    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .card-img {
     width: 100%;
-    height: 180px;
-    background-color: #d5d5d5;
+    height: 160px;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .card-info {
     display: flex;
     justify-content: space-between;
-    padding: 10px 10px 0 10px;
+    padding: 20px 0;
+}
+
+.card-info .nome {
     font-weight: bold;
 }
 
@@ -133,8 +158,116 @@ header a:hover {
     cursor: pointer;
     margin-top: 10px;
     padding: 12px;
-    background-color: #d5d5d5;
+    background-color: #0E0E55;
+    color: #fff;
+    border-radius: 8px;
     border: none;
     cursor: pointer;
     font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.comprar:hover {
+    background-color: #202071;
+    transform: scale(1.02);
+}
+
+.vendedores h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #0E0E55;
+    margin-bottom: 10px;
+}
+
+.vendedores p {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+
+.vendedor-img img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.vendedor-info {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* footer */
+
+.footer {
+    background-color: #0E0E55;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.footer-social h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.social-icons a {
+    font-size: 22px;
+    color: #fff;
+    background-color: #1a1a6a;
+    padding: 12px;
+    border-radius: 50%;
+    transition: .3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #fff;
+    color: #0E0E55;
+    transform: scale(1.1);
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    color: #dcdcff;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.footer-column a:hover {
+    color: #fff;
+}
+
+.footer-copy {
+    font-size: 14px;
+    margin-top: 20px;
+    opacity: .7;
 }
